@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Maejo University</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Shinobu1902">
+    <meta name="description" content="เว็ปแบบฟรอม">
+    <link rel="shortcut icon" href="https://www.mju.ac.th/main/images/small.ico">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <!-- CSS only -->
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Charmonman:wght@700&amp;family=Montserrat&amp;Sarabun:wght@500&amp;display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Sarabun', sans-serif;
+            font-size: 20px;
+        }
+
+        h6 {
+            font-family: 'Sarabun', sans-serif;
+        }
+
+        h1 {
+            font-family: 'Charmonman', sans-serif;
+        }
+    </style>
+    <!-- font -->
+
+</head>
+
+<body>
+    <!-- bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark ">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
+            aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="col-lg-5"></div>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0 ">
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="FormStudent.html">สำหรับนักศึกษา</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="Form Parents.html">สำหรับผู้ปกครอง</a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+    <!-- bar -->
+    <!-- สีพื้นหลัง -->
+    <div class="mask" style="
+  background: linear-gradient(
+    45deg,
+    rgba(176, 247, 167, 0.7),
+    rgba(5, 129, 1, 0.7) 100%
+  );
+">
+        <!-- สีพื้นหลัง -->
+        <div class="p-1">
+            <div class="card col-lg-10 p-5 offset-sm-1">
+                <!-- หัวเอกสาร -->
+                <div class="col-md-12">
+                    <div class="row ">
+                        <div class="col-md-4 justify-self-start">
+                            <img src="https://upload.wikimedia.org/wikipedia/th/thumb/4/43/%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%A7%E0%B8%B4%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%A5%E0%B8%B1%E0%B8%A2%E0%B9%81%E0%B8%A1%E0%B9%88%E0%B9%82%E0%B8%88%E0%B9%89_edit.png/360px-%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%A7%E0%B8%B4%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%A5%E0%B8%B1%E0%B8%A2%E0%B9%81%E0%B8%A1%E0%B9%88%E0%B9%82%E0%B8%88%E0%B9%89_edit.png"
+                                alt="สัญลักษณ์ มหาวิทยาลัยแม่โจ้" style="width: 5rem; height: 5rem;">
+                        </div>
+                        <div class="row col-md-7">
+                            <div class="col-md-1"></div>
+                            <div class="col-md-6">
+                                <h2><B>คำร้องขอลาพักการศึกษา</B></h2>
+                            </div>
+
+                            <p>(สําหรับนักศึกษาที่ได้ศึกษามาแล้ว ไม่น้อยกว่าหนึ่งภาคการศึกษา)</p>
+                        </div>
+                        <div class="col-md-1 justify-self-end">
+                            <h2>มจท. 10</h2>
+                        </div>
+                    </div>
+                </div>
+                <!-- หัวเอกสาร -->
+                <!-- ตัวเอกสาร -->
+                <form class="was-validated">
+                    <div class="row justify-content-end">เขียนที่ มหาวิทยาลัยแม่โจ้<div class="col-lg-1"></div>
+                    </div>
+                    <div class="row justify-content-end">
+                        <div class="col-md-3">วัน/เดือน/ปี<input type="date" required></div>
+                    </div>
+                    <!-- บรรทัดที่1 -->
+                    <div class="row">
+                        <div class="col-lg-1">
+                            <b>เรื่อง</b>
+                        </div>
+                        <div class="form-group col-lg-3">ขอลาพัการศึกษาในภาคเรียนที่
+                            <select class="custom-select" required>
+                                <option value=""></option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                            </select>
+                            <div class="invalid-feedback">กรุณาเลือกภาคเรียน</div>
+                        </div>
+
+                        <div class="row col-lg-4">ปีการศึกษา
+                            <div class="col-lg-8">
+                                <select class="custom-select w-50" name="" id="คณบดีคณะ" required>
+                                    <option value=""></option>
+                                    <option value="2560">2560</option>
+                                    <option value="2561">2561</option>
+                                    <option value="2562">2562</option>
+                                    <option value="2563">2563</option>
+                                    <option value="2564">2564</option>
+                                    <option value="2565">2565</option>
+                                    <option value="2566">2566</option>
+                                    <option value="2567">2567</option>
+                                    <option value="2568">2568</option>
+                                    <option value="2569">2569</option>
+                                    <option value="2570">2570</option>
+                                </select>
+                                <div class="invalid-feedback">กรุณาเลือกปีการศึกษาของท่าน</div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- บรรทัดที่1 -->
+                    <!-- บรรทัดที่2 -->
+                    <div class="row">
+                        <div class="col-lg-1">
+                            <b>เรียน</b>
+                        </div>
+                        <div class="form-group col-sm-6">คณบดีคณะ
+                            <select class="custom-select w-50" name="" id="คณบดีคณะ" required>
+                                <option value=""></option>
+                                <option value="คณะบริหารธุรกิจ">คณะบริหารธุรกิจ</option>
+                                <option value="คณะวิทยาศาสตร์">คณะวิทยาศาสตร์</option>
+                                <option value="คณะเทคโนโลยีการประมงและทรัพยากรทางน้ำ">
+                                    คณะเทคโนโลยีการประมงและทรัพยากรทางน้ำ
+                                </option>
+                                <option value="คณะศิลปศาสตร์">คณะศิลปศาสตร์</option>
+                                <option value="คณะสถาปัตยกรรมศาสตร์ และการออกแบบสิ่งแวดล้อม">
+                                    คณะสถาปัตยกรรมศาสตร์
+                                    และการออกแบบสิ่งแวดล้อม</option>
+                                <option value="คณะสารสนเทศและการสื่อสาร">คณะสารสนเทศและการสื่อสาร</option>
+                                <option value="คณะผลิตกรรมการเกษตร">คณะผลิตกรรมการเกษตร</option>
+                                <option value="คณะวิศวกรรมและอุตสาหกรรมเกษตร">คณะวิศวกรรมและอุตสาหกรรมเกษตร
+                                </option>
+                                <option value="คณะพัฒนาการท่องเที่ยว">คณะพัฒนาการท่องเที่ยว</option>
+                                <option value="คณะเศรษฐศาสตร์">คณะเศรษฐศาสตร์</option>
+                                <option value="คณะสัตวศาสตร์และเทคโนโลยี">คณะสัตวศาสตร์และเทคโนโลยี</option>
+                            </select>
+                            <div class="invalid-feedback">กรุณาเลือกคณบดีคณะของท่าน</div>
+                        </div>
+                    </div>
+                    <!-- บรรทัดที่2 -->
+                    <!-- บรรทัดที่3 -->
+                    <div class="row">
+                        <div class="col-lg-1"></div>
+                        <legend class="col-form-label col-lg-1 pt-0">ข้าพเจ้า</legend>
+                        <div class="col-lg-3">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="คำนำหน้า" value="นาย" required>
+                                <label class="form-check-label" for="inlineRadio1">นาย</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="คำนำหน้า" value="นาง">
+                                <label class="form-check-label" for="inlineRadio2">นาง</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="คำนำหน้า" value="นางสาว">
+                                <label class="form-check-label" for="inlineRadio3">นางสาว</label>
+                                <div class="invalid-feedback">
+                                    กรุณาใส่คำนำหน้าของท่าน
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-1">ชื่อ</div>
+                        <div class="col-lg-2">
+                            <input type="text" class="form-control" id="ชื่อ" placeholder="ชื่อ" pattern="[ก-๙]{1,25}"
+                                maxlength="25" required>
+                            <div class="invalid-feedback">
+                                กรุณาใส่ชื่อของท่าน
+                            </div>
+                        </div>
+
+                        <div class="col-lg-1">นามสกุล</div>
+                        <div class="col-lg-2">
+                            <input type="text" class="form-control" id="นามสกุล" placeholder="นามสกุล"
+                                pattern="[ก-๙]{1,25}" maxlength="25" required>
+                            <div class="invalid-feedback">
+                                กรุณาใส่นามสกุลของท่าน
+                            </div>
+                        </div>
+                    </div>
+                    <!-- บรรทัดที่3 -->
+                    <!-- บรรทัดที่4 -->
+                    <div class="row">
+                        <div class="col-lg-2">
+                            รหัสนักศึกษา (10หลัก)
+                        </div>
+                        <div class="col-lg-2">
+                            <input type="text" class="form-control" id="รหัสนักศึกษา" placeholder="รหัสนักศึกษา"
+                                pattern="[0-9]{10,10}" maxlength="10" required>
+                            <div class="invalid-feedback">
+                                กรุณาใส่รหัสนักศึกษาของท่าน
+                            </div>
+                        </div>
+                        <div class="col-lg-2">
+                            โทรศัพท์มือถือ (10หลัก)
+                        </div>
+                        <div class="col-lg-2">
+                            <input type="text" class="form-control" id="โทรศัพท์มือถือ" placeholder="โทรศัพท์มือถือ"
+                                pattern="[0-9]{10,10}" maxlength="10" required>
+                            <div class="invalid-feedback">
+                                กรุณาใส่โทรศัพท์มือถือของท่าน
+                            </div>
+                        </div>
+                    </div>
+                    <!-- บรรทัดที่4 -->
+                    <!-- บรรทัดที่5 -->
+                    <div class="row">
+                        <legend class="col-form-label col-sm-2 pt-0">หลักสูตร ปริญญาตรี</legend>
+                        <div class="col-lg-5">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="หลักสูตร" value="4 – 5 ปี" required>
+                                <label class="form-check-label" for="inlineRadio1"> 4 – 5 ปี</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="หลักสูตร"
+                                    value="4 ปีเทียบเข้าเรียน (2ปี)">
+                                <label class="form-check-label" for="inlineRadio2">4 ปีเทียบเข้าเรียน
+                                    (2ปี)</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="หลักสูตร" value="ภาคปกติ">
+                                <label class="form-check-label" for="inlineRadio3">ภาคปกติ</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="หลักสูตร" value="ภาคสมทบ">
+                                <label class="form-check-label" for="inlineRadio3">ภาคสมทบ</label>
+                                <div class="invalid-feedback">
+                                    กรุณาใส่โทรศัพท์มือถือของท่าน
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- บรรทัดที่5 -->
+                    <!-- บรรทัดที่6 -->
+                    <div class="row">
+                        <div class="col-lg-1">
+                            สาขาวิชา
+                        </div>
+                        <div class="col-lg-2">
+                            <input type="text" class="form-control" id="รสาขาวิชา" placeholder="ใส่คำว่า สาขา นำหน้า"
+                                pattern="สาขา+[ก-ฮะ-แไใ่ข๋์]{1,25}" maxlength="25" required>
+                            <div class="invalid-feedback">
+                                กรุณาใส่สาขาวิชาของท่าน
+                            </div>
+                        </div>
+                        <div class="col-lg-6">คณะ
+                            <select class="custom-select w-50" name="" id="คณะ" required>
+                                <option value=""> </option>
+                                <option value="คณะบริหารธุรกิจ">คณะบริหารธุรกิจ</option>
+                                <option value="คณะวิทยาศาสตร์">คณะวิทยาศาสตร์</option>
+                                <option value="คณะเทคโนโลยีการประมงและทรัพยากรทางน้ำ">
+                                    คณะเทคโนโลยีการประมงและทรัพยากรทางน้ำ
+                                </option>
+                                <option value="คณะศิลปศาสตร์">คณะศิลปศาสตร์</option>
+                                <option value="คณะสถาปัตยกรรมศาสตร์ และการออกแบบสิ่งแวดล้อม">
+                                    คณะสถาปัตยกรรมศาสตร์
+                                    และการออกแบบสิ่งแวดล้อม</option>
+                                <option value="คณะสารสนเทศและการสื่อสาร">คณะสารสนเทศและการสื่อสาร</option>
+                                <option value="คณะผลิตกรรมการเกษตร">คณะผลิตกรรมการเกษตร</option>
+                                <option value="คณะวิศวกรรมและอุตสาหกรรมเกษตร">คณะวิศวกรรมและอุตสาหกรรมเกษตร
+                                </option>
+                                <option value="คณะพัฒนาการท่องเที่ยว">คณะพัฒนาการท่องเที่ยว</option>
+                                <option value="คณะเศรษฐศาสตร์">คณะเศรษฐศาสตร์</option>
+                                <option value="คณะสัตวศาสตร์และเทคโนโลยี">คณะสัตวศาสตร์และเทคโนโลยี</option>
+                            </select>
+                            <div class="invalid-feedback">กรุณาเลือกคณะของท่าน</div>
+                        </div>
+                    </div>
+                    <!-- บรรทัดที่6 -->
+                    <!-- บรรทัดที่7 -->
+                    <div class="row">
+                        <div class="col-lg-4">
+                            มีความประสงค์จะขอลาพักการศึกษา เนื่องจาก
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" id="exampleFormControlTextarea1"></textarea>
+                        </div>
+                        <div>พร้อมนี้ได้แนบใบยินยอมขอลาพักการศึกษาจากผู้ปกครอง / ใบรับรองแพทย2 / เอกสารอื่นๆ
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-2"></div>จึงเรียนมาเพื่อโปรดพิจารณา
+                        </div>
+                    </div>
+                    <!-- บรรทัดที่7 -->
+                    <!-- บรรทัดที่8 -->
+                    <div class="row justify-content-end p-5">
+                        <div class="col-lg-3 ">
+                            <div class="form-group col-lg-12 ">
+                                <div class="col-lg-12 row justify-content-md-center">
+                                    ขอแสดงความนับถือ</div>
+                                <label for="exampleFormControlFile1"
+                                    class="col-lg-12 row justify-content-md-center">(......................................)</label>
+                                <div class="col-lg-12 row justify-content-md-center">
+                                    นักศึกษา</div>
+                                <input type="file" class="form-control-file col-lg-7" id="exampleFormControlFile1"
+                                    required>(รูปลายเซ็นต์)
+                            </div>
+                        </div>
+                        <div class="col-lg-2"></div>
+                    </div>
+                    <!-- บรรทัดที่8 -->
+                    <!-- ปุ่มเลือก -->
+                    <div class="row justify-content-sm-center">
+                        <button class="col-lg-2 btn btn-primary " type="submit"
+                            href="https://www.youtube.com/">ส่ง</button>
+                    </div>
+                    <!-- ปุ่มเลือก -->
+
+
+                </form>
+                <!-- ตัวเอกสาร -->
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
+<!-- MDB -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.0.0/mdb.min.js">
+</script>
+<!--  Bootstrap -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
